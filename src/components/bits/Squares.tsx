@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 
 interface SquaresProps {
   direction?: 'diagonal' | 'up' | 'right' | 'down' | 'left';
@@ -13,10 +13,8 @@ export const Squares = ({
   speed = 1,
   borderColor = '#333',
   squareSize = 40,
-  hoverFillColor = '#222',
 }: SquaresProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [hoveredSquare, setHoveredSquare] = useState<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
