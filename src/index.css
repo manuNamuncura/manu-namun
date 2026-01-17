@@ -1,0 +1,30 @@
+/* src/index.css */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+@font-face {
+  font-family: 'Alan-sans';
+  src: url('./assets/fonts/Alan-family.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Aquí sobreescribimos la fuente sans por defecto de Tailwind */
+  --font-sans: "Alan-sans", ui-sans-serif, system-ui, sans-serif;
+  
+  /* También puedes crear una variable específica si no quieres que sea la global */
+  --font-alan: "Alan-sans";
+}
+
+/* Configuración necesaria para el Dark Mode en v4 */
+@variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
