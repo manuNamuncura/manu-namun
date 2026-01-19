@@ -20,7 +20,6 @@ export const DecryptedText: React.FC<DecryptedTextProps> = ({
 }) => {
   const [displayText, setDisplayText] = useState(text);
   const animationRef = useRef<number | null>(null);
-  const startTimeRef = useRef<number | null>(null);
 
   const scramble = (targetText: string, duration: number) => {
     const totalIterations = duration * 1000 / interval; // Iteraciones totales
