@@ -111,7 +111,7 @@ export const Contact = () => {
                             </div>
                             <div>
                                 <p className="text-xs text-gray-500 uppercase tracking-widest">LinkedIn</p>
-                                <p className="text-black dark:text-white font-medium">in/manuel-namuncura</p>
+                                <p className="text-black dark:text-white font-medium">Manuel Namuncurá</p>
                             </div>
                         </a>
 
